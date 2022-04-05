@@ -1,0 +1,144 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"27 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\Lab de Microcontroladores\Práctica 4\P4.X\main.c
+[e E4866 butto_state `uc
+pushed 0
+no_pushed 1
+]
+"28
+[e E4863 led_state `uc
+led_OFF 0
+led_ON 1
+]
+"40
+[e E4857 por_ACDC `uc
+digital 0
+analog 1
+]
+"41
+[e E4854 por_dir `uc
+output 0
+input 1
+]
+"4 D:\MPLABxIDE\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 D:\MPLABxIDE\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 D:\MPLABxIDE\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 D:\MPLABxIDE\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 D:\MPLABxIDE\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 D:\MPLABxIDE\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\MPLABxIDE\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"24 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\Lab de Microcontroladores\Práctica 4\P4.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"39
+[v _portsInit portsInit `(v  1 e 1 0 ]
+"233 D:/MPLABxIDE/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
+"278
+[v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
+[s S28 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"3084
+[s S37 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S45 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S48 . 1 `S28 1 . 1 0 `S37 1 . 1 0 `S45 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES48  1 e 1 @3969 ]
+[s S76 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"3807
+[s S85 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S94 . 1 `S76 1 . 1 0 `S85 1 . 1 0 ]
+[v _LATAbits LATAbits `VES94  1 e 1 @3977 ]
+[s S129 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"4659
+[s S138 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S147 . 1 `S129 1 . 1 0 `S138 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES147  1 e 1 @3986 ]
+[s S173 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"4881
+[u S191 . 1 `S173 1 . 1 0 `S28 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES191  1 e 1 @3987 ]
+"24 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\Lab de Microcontroladores\Práctica 4\P4.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"36
+} 0
+"39
+[v _portsInit portsInit `(v  1 e 1 0 ]
+{
+"48
+} 0
