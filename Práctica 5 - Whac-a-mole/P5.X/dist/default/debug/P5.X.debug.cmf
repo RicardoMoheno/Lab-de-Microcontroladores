@@ -1,0 +1,1255 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\P5.X.debug.o
+cinit CODE 0 4B8A 4B8A 1E 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 4BA8 4BA8 1E 1 2
+text1 CODE 0 48B0 48B0 BA 1 2
+text2 CODE 0 4A42 4A42 4C 1 2
+text3 CODE 0 4B40 4B40 28 1 2
+text4 CODE 0 496A 496A 6E 1 2
+text5 CODE 0 49D8 49D8 6A 1 2
+text6 CODE 0 880 880 28F8 1 2
+text7 CODE 0 3178 3178 4C0 1 2
+text8 CODE 0 4B68 4B68 22 1 2
+text9 CODE 0 47AC 47AC 104 1 2
+text10 CODE 0 42BC 42BC 234 1 2
+text11 CODE 0 3AF8 3AF8 42A 1 2
+text12 CODE 0 4B0C 4B0C 34 1 2
+text13 CODE 0 44F0 44F0 1B4 1 2
+text14 CODE 0 4A8E 4A8E 46 1 2
+text15 CODE 0 3638 3638 4C0 1 2
+text16 CODE 0 4AD4 4AD4 38 1 2
+text17 CODE 0 3F22 3F22 39A 1 2
+text18 CODE 0 46A4 46A4 108 1 2
+text19 CODE 0 4BC6 4BC6 1A 1 2
+cstackCOMRAM COMRAM 1 1 1 5D 1 1
+cstackBANK0 BANK0 1 60 60 3A 1 1
+cstackBANK1 BANK1 1 100 100 BC 1 1
+bssBANK0 BANK0 1 9A 9A E 1 1
+smallconst SMALLCONST 0 800 800 80 1 2
+bssCOMRAM COMRAM 1 5E 5E 2 1 1
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 2 2 4 1 2
+reset_vec CODE 0 0 0 2 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM A8-FF 1
+RAM 1BC-7FF 1
+SFR F53-FFC 1
+BANK0 A8-FF 1
+BANK1 1BC-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 6-7FF 1
+CONST 4BE0-7FFF 1
+SMALLCONST 4BE0-7FFF 1
+CODE 6-7FF 1
+CODE 4BE0-7FFF 1
+BIGRAM A8-FF 1
+BIGRAM 1BC-7FF 1
+BIGSFR F53-FFC 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 4BE0-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\P5.X.debug.o
+4BC6 text19 CODE >43:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BC6 text19 CODE >46:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BCA text19 CODE >47:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BD0 text19 CODE >48:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BD4 text19 CODE >50:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BD6 text19 CODE >51:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BDA text19 CODE >52:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BDE text19 CODE >53:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+46A4 text18 CODE >43:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+46A4 text18 CODE >47:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+46BC text18 CODE >48:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+46D0 text18 CODE >49:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+46FA text18 CODE >50:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+46FC text18 CODE >51:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+470C text18 CODE >52:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+4710 text18 CODE >53:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+471E text18 CODE >54:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+4736 text18 CODE >57:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+474A text18 CODE >60:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+475E text18 CODE >63:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+4768 text18 CODE >64:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+476A text18 CODE >62:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+477A text18 CODE >67:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+478A text18 CODE >68:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+479A text18 CODE >69:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+47AA text18 CODE >70:D:\MPLABxIDE\pic\sources\c99\common\fltol.c
+3F22 text17 CODE >11:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F22 text17 CODE >26:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F28 text17 CODE >27:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F2E text17 CODE >28:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F3C text17 CODE >29:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F3E text17 CODE >33:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F4E text17 CODE >35:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F5E text17 CODE >37:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F6E text17 CODE >40:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F70 text17 CODE >42:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F74 text17 CODE >43:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F78 text17 CODE >46:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F88 text17 CODE >49:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F8E text17 CODE >50:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3F94 text17 CODE >51:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FA2 text17 CODE >52:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FA4 text17 CODE >56:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FB4 text17 CODE >58:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FC4 text17 CODE >60:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FD4 text17 CODE >63:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FD6 text17 CODE >65:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FDA text17 CODE >66:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FDE text17 CODE >69:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+3FEE text17 CODE >75:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4004 text17 CODE >76:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4014 text17 CODE >77:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+401C text17 CODE >78:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4020 text17 CODE >79:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4034 text17 CODE >83:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4044 text17 CODE >84:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4044 text17 CODE >85:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4058 text17 CODE >89:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4072 text17 CODE >92:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4082 text17 CODE >93:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4092 text17 CODE >94:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40A2 text17 CODE >96:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40A6 text17 CODE >97:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40AA text17 CODE >100:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40BA text17 CODE >101:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40C4 text17 CODE >102:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40CE text17 CODE >103:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40DC text17 CODE >104:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40DE text17 CODE >105:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40DE text17 CODE >106:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+40E8 text17 CODE >112:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4106 text17 CODE >115:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4108 text17 CODE >116:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4118 text17 CODE >118:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+411A text17 CODE >97:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+411A text17 CODE >119:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+412A text17 CODE >122:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4140 text17 CODE >123:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4146 text17 CODE >128:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4150 text17 CODE >129:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+415E text17 CODE >130:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4160 text17 CODE >131:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4160 text17 CODE >132:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+416A text17 CODE >133:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4170 text17 CODE >127:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+417E text17 CODE >139:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4182 text17 CODE >140:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4190 text17 CODE >141:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+41BE text17 CODE >142:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+41C2 text17 CODE >143:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+41C6 text17 CODE >144:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+41C6 text17 CODE >145:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+41D8 text17 CODE >149:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+41D8 text17 CODE >150:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+41E8 text17 CODE >151:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+41F4 text17 CODE >152:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4202 text17 CODE >153:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+422C text17 CODE >154:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4230 text17 CODE >159:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+424A text17 CODE >160:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4250 text17 CODE >161:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4260 text17 CODE >165:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+427A text17 CODE >166:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4282 text17 CODE >167:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4292 text17 CODE >169:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4296 text17 CODE >173:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+429A text17 CODE >175:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+42A8 text17 CODE >176:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+42AA text17 CODE >177:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+42AE text17 CODE >180:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+42B0 text17 CODE >182:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+42BA text17 CODE >185:D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+4AD4 text16 CODE >15:D:\MPLABxIDE\pic\sources\c99\common\flneg.c
+4AD4 text16 CODE >17:D:\MPLABxIDE\pic\sources\c99\common\flneg.c
+4AEA text16 CODE >18:D:\MPLABxIDE\pic\sources\c99\common\flneg.c
+4AFA text16 CODE >19:D:\MPLABxIDE\pic\sources\c99\common\flneg.c
+4B0A text16 CODE >20:D:\MPLABxIDE\pic\sources\c99\common\flneg.c
+3638 text15 CODE >10:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3638 text15 CODE >21:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+363E text15 CODE >22:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3644 text15 CODE >23:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3652 text15 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3654 text15 CODE >28:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3664 text15 CODE >30:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3674 text15 CODE >32:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3684 text15 CODE >35:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3686 text15 CODE >37:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+368A text15 CODE >38:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+368E text15 CODE >41:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+369E text15 CODE >44:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36A4 text15 CODE >46:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36B6 text15 CODE >47:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36B8 text15 CODE >49:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36BE text15 CODE >50:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36CC text15 CODE >51:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36CE text15 CODE >55:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36DE text15 CODE >57:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36EE text15 CODE >59:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+36FE text15 CODE >62:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3700 text15 CODE >64:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3704 text15 CODE >65:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3708 text15 CODE >68:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3718 text15 CODE >75:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+372A text15 CODE >77:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3738 text15 CODE >78:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+373C text15 CODE >81:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3740 text15 CODE >82:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3744 text15 CODE >83:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3748 text15 CODE >84:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+374C text15 CODE >85:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3750 text15 CODE >86:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3754 text15 CODE >87:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3758 text15 CODE >88:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+375C text15 CODE >89:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3760 text15 CODE >90:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3764 text15 CODE >91:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3768 text15 CODE >92:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+376C text15 CODE >93:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3770 text15 CODE >94:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3774 text15 CODE >95:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3778 text15 CODE >98:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+377C text15 CODE >100:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37A6 text15 CODE >101:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37C2 text15 CODE >102:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37D2 text15 CODE >103:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37D6 text15 CODE >104:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37DA text15 CODE >106:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37DA text15 CODE >109:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37E8 text15 CODE >110:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37F0 text15 CODE >111:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37F4 text15 CODE >113:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+37F8 text15 CODE >115:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3806 text15 CODE >116:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3808 text15 CODE >118:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3812 text15 CODE >119:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3814 text15 CODE >106:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3814 text15 CODE >120:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3826 text15 CODE >121:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3826 text15 CODE >124:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3834 text15 CODE >127:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3844 text15 CODE >128:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3858 text15 CODE >132:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3868 text15 CODE >134:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3876 text15 CODE >135:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3884 text15 CODE >136:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+388C text15 CODE >137:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3890 text15 CODE >139:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3894 text15 CODE >141:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+38A2 text15 CODE >142:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+38A4 text15 CODE >144:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+38AE text15 CODE >145:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+38B4 text15 CODE >153:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+38DA text15 CODE >154:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+390A text15 CODE >155:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+390E text15 CODE >156:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3910 text15 CODE >157:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3920 text15 CODE >158:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3930 text15 CODE >162:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3940 text15 CODE >163:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3940 text15 CODE >166:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3966 text15 CODE >167:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+397A text15 CODE >172:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3984 text15 CODE >173:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3992 text15 CODE >174:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3994 text15 CODE >176:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39A2 text15 CODE >177:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39A6 text15 CODE >178:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39AA text15 CODE >180:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39AE text15 CODE >182:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39BE text15 CODE >183:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39C0 text15 CODE >171:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39CE text15 CODE >192:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39D2 text15 CODE >193:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39E0 text15 CODE >194:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39F6 text15 CODE >195:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39FA text15 CODE >196:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39FE text15 CODE >197:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+39FE text15 CODE >198:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A10 text15 CODE >202:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A10 text15 CODE >203:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A20 text15 CODE >204:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A2C text15 CODE >205:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A3A text15 CODE >206:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A64 text15 CODE >207:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A74 text15 CODE >208:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A76 text15 CODE >215:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3A96 text15 CODE >216:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3AA6 text15 CODE >218:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3AB6 text15 CODE >219:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3ABA text15 CODE >225:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3AC8 text15 CODE >226:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3ACA text15 CODE >227:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3ACE text15 CODE >230:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3AD0 text15 CODE >232:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3AD6 text15 CODE >233:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3AE4 text15 CODE >234:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3AE6 text15 CODE >236:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+3AF6 text15 CODE >237:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+4A8E text14 CODE >245:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+4A8E text14 CODE >248:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+4A9E text14 CODE >249:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+4AD2 text14 CODE >250:D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+44F0 text13 CODE >10:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+44F2 text13 CODE >15:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4510 text13 CODE >16:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4542 text13 CODE >17:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4546 text13 CODE >18:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4546 text13 CODE >19:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4556 text13 CODE >21:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+456C text13 CODE >22:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4580 text13 CODE >23:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4584 text13 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4588 text13 CODE >25:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+458A text13 CODE >26:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4594 text13 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+45C6 text13 CODE >29:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+45C8 text13 CODE >30:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+45D4 text13 CODE >31:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+45DE text13 CODE >28:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+45DE text13 CODE >32:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4610 text13 CODE >34:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4612 text13 CODE >35:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+461C text13 CODE >33:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+463A text13 CODE >37:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4648 text13 CODE >38:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+464A text13 CODE >39:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+464E text13 CODE >40:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4672 text13 CODE >41:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4690 text13 CODE >42:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4692 text13 CODE >43:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+46A2 text13 CODE >44:D:\MPLABxIDE\pic\sources\c99\common\xxtofl.c
+4B0C text12 CODE >4:D:\MPLABxIDE\pic\sources\c99\common\fabsf.c
+4B0C text12 CODE >6:D:\MPLABxIDE\pic\sources\c99\common\fabsf.c
+4B2C text12 CODE >7:D:\MPLABxIDE\pic\sources\c99\common\fabsf.c
+4B2E text12 CODE >8:D:\MPLABxIDE\pic\sources\c99\common\fabsf.c
+4B3E text12 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\fabsf.c
+3AF8 text11 CODE >8:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3AF8 text11 CODE >17:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3AFE text11 CODE >18:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B04 text11 CODE >19:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B12 text11 CODE >20:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B14 text11 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B24 text11 CODE >26:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B34 text11 CODE >28:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B44 text11 CODE >31:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B46 text11 CODE >33:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B4A text11 CODE >36:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B5A text11 CODE >39:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B60 text11 CODE >40:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B66 text11 CODE >41:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B74 text11 CODE >42:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B76 text11 CODE >45:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B86 text11 CODE >48:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3B96 text11 CODE >50:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3BA6 text11 CODE >53:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3BA8 text11 CODE >54:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3BAC text11 CODE >57:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3BBC text11 CODE >58:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3BBC text11 CODE >65:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3BDC text11 CODE >66:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3BF0 text11 CODE >95:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3BFC text11 CODE >96:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C06 text11 CODE >97:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C10 text11 CODE >98:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C1C text11 CODE >99:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C28 text11 CODE >100:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C34 text11 CODE >101:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C40 text11 CODE >102:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C4C text11 CODE >103:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C58 text11 CODE >104:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C66 text11 CODE >105:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C72 text11 CODE >106:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C82 text11 CODE >107:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C8E text11 CODE >108:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3C9E text11 CODE >109:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3CAC text11 CODE >110:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3CB8 text11 CODE >111:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3CC8 text11 CODE >112:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3CD4 text11 CODE >113:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3CE4 text11 CODE >114:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3CF0 text11 CODE >115:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3D00 text11 CODE >116:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3D0C text11 CODE >117:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3D36 text11 CODE >145:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3D6C text11 CODE >146:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3D7A text11 CODE >149:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3D94 text11 CODE >152:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3D98 text11 CODE >153:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DA2 text11 CODE >154:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DB0 text11 CODE >155:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DB2 text11 CODE >156:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DB2 text11 CODE >157:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DBC text11 CODE >158:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DC2 text11 CODE >152:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DD0 text11 CODE >163:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DD4 text11 CODE >164:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3DE2 text11 CODE >165:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E10 text11 CODE >166:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E14 text11 CODE >167:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E18 text11 CODE >168:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E18 text11 CODE >169:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E2A text11 CODE >173:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E2A text11 CODE >174:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E3A text11 CODE >175:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E46 text11 CODE >176:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E54 text11 CODE >177:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E7E text11 CODE >178:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E82 text11 CODE >183:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3E9C text11 CODE >184:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3EAC text11 CODE >185:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3EB0 text11 CODE >187:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3ECA text11 CODE >188:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3EDA text11 CODE >190:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3EDE text11 CODE >191:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3EE2 text11 CODE >192:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3EE2 text11 CODE >194:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3EE6 text11 CODE >195:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3EF6 text11 CODE >196:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3F04 text11 CODE >197:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3F06 text11 CODE >199:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3F0C text11 CODE >201:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3F10 text11 CODE >203:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+3F20 text11 CODE >205:D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+42BC text10 CODE >4:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+42BC text10 CODE >7:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+42CC text10 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+42E8 text10 CODE >10:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+431C text10 CODE >11:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+4324 text10 CODE >12:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+4340 text10 CODE >13:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+4374 text10 CODE >14:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+437C text10 CODE >15:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+4398 text10 CODE >16:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+43A4 text10 CODE >18:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+43C0 text10 CODE >19:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+43F4 text10 CODE >20:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+43FC text10 CODE >21:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+4418 text10 CODE >22:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+444C text10 CODE >23:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+4454 text10 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+4470 text10 CODE >25:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+4478 text10 CODE >28:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+44AA text10 CODE >29:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+44DE text10 CODE >30:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+44EE text10 CODE >31:D:\MPLABxIDE\pic\sources\c99\common\scalbnf.c
+47AC text9 CODE >4:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+47AC text9 CODE >7:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+47DA text9 CODE >8:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+47EA text9 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4818 text9 CODE >10:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4828 text9 CODE >12:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4836 text9 CODE >13:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4848 text9 CODE >14:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4856 text9 CODE >15:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4868 text9 CODE >16:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4878 text9 CODE >17:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4888 text9 CODE >18:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+48AE text9 CODE >19:D:\MPLABxIDE\pic\sources\c99\common\flge.c
+4B68 text8 CODE >4:D:\MPLABxIDE\pic\sources\c99\common\nanf.c
+4B68 text8 CODE >7:D:\MPLABxIDE\pic\sources\c99\common\nanf.c
+4B78 text8 CODE >8:D:\MPLABxIDE\pic\sources\c99\common\nanf.c
+4B88 text8 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\nanf.c
+3178 text7 CODE >22:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3178 text7 CODE >25:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3178 text7 CODE >30:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3198 text7 CODE >33:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+31CE text7 CODE >34:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+322A text7 CODE >37:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3248 text7 CODE >38:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3276 text7 CODE >39:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+328A text7 CODE >40:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3298 text7 CODE >41:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+32A0 text7 CODE >42:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+32C0 text7 CODE >46:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+32FE text7 CODE >47:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3316 text7 CODE >48:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+332A text7 CODE >49:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+334E text7 CODE >50:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3376 text7 CODE >51:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3376 text7 CODE >52:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3386 text7 CODE >53:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+33B6 text7 CODE >54:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+33C4 text7 CODE >55:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+33D4 text7 CODE >56:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+33DE text7 CODE >59:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+33EE text7 CODE >60:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+340E text7 CODE >61:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+341E text7 CODE >63:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3422 text7 CODE >64:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+343A text7 CODE >65:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3460 text7 CODE >66:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3478 text7 CODE >67:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3488 text7 CODE >68:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3498 text7 CODE >69:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3498 text7 CODE >70:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+34A8 text7 CODE >71:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+34B2 text7 CODE >63:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+34C8 text7 CODE >75:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+34DE text7 CODE >20:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+34EE text7 CODE >77:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3520 text7 CODE >78:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3532 text7 CODE >79:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3564 text7 CODE >80:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3576 text7 CODE >82:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+35A0 text7 CODE >84:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+35A0 text7 CODE >85:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+35D4 text7 CODE >86:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3606 text7 CODE >87:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3626 text7 CODE >88:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+3636 text7 CODE >89:D:\MPLABxIDE\pic\sources\c99\common\sqrtf.c
+880 text6 CODE >53:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+880 text6 CODE >61:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+8A0 text6 CODE >62:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+8C0 text6 CODE >63:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+8DA text6 CODE >64:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+8F2 text6 CODE >67:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+908 text6 CODE >68:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+91E text6 CODE >70:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+93A text6 CODE >71:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+950 text6 CODE >73:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+994 text6 CODE >74:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+9CC text6 CODE >81:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+9DC text6 CODE >82:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+9EA text6 CODE >83:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+A06 text6 CODE >84:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+A1A text6 CODE >85:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+A36 text6 CODE >86:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+A7E text6 CODE >87:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+ABE text6 CODE >88:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+B10 text6 CODE >89:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+B40 text6 CODE >91:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+B40 text6 CODE >94:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+B5C text6 CODE >95:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+B78 text6 CODE >96:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+B8E text6 CODE >97:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+BB0 text6 CODE >98:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+BE8 text6 CODE >100:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+C34 text6 CODE >102:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+C50 text6 CODE >103:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+CAA text6 CODE >104:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+CC2 text6 CODE >105:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+CFA text6 CODE >106:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+D12 text6 CODE >107:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+D20 text6 CODE >108:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+D48 text6 CODE >111:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+D6C text6 CODE >113:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+DBC text6 CODE >114:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+DCC text6 CODE >115:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+DDA text6 CODE >116:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+E0E text6 CODE >117:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+E1E text6 CODE >118:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+E64 text6 CODE >119:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+E6E text6 CODE >120:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+EEA text6 CODE >121:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+F04 text6 CODE >122:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+F28 text6 CODE >124:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+F3C text6 CODE >127:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+F4C text6 CODE >128:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+F5A text6 CODE >129:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+F70 text6 CODE >130:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+F7A text6 CODE >131:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+FFA text6 CODE >133:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1010 text6 CODE >134:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1020 text6 CODE >138:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1042 text6 CODE >140:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1066 text6 CODE >141:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1074 text6 CODE >25:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+10DC text6 CODE >141:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+10E0 text6 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+114C text6 CODE >142:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1170 text6 CODE >143:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+118E text6 CODE >25:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+11F6 text6 CODE >143:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+11FA text6 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1266 text6 CODE >146:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+129A text6 CODE >147:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+13B2 text6 CODE >46:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+13E6 text6 CODE >45:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1462 text6 CODE >150:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1496 text6 CODE >151:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+14B6 text6 CODE >152:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+14E0 text6 CODE >153:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1548 text6 CODE >154:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+154C text6 CODE >156:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+155C text6 CODE >158:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1578 text6 CODE >23:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+15AC text6 CODE >160:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+15BE text6 CODE >161:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+15DE text6 CODE >163:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1636 text6 CODE >164:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+164E text6 CODE >166:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1666 text6 CODE >167:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+168A text6 CODE >168:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+169E text6 CODE >169:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+16C2 text6 CODE >170:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+16D6 text6 CODE >172:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+16E6 text6 CODE >173:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+16F2 text6 CODE >174:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1702 text6 CODE >176:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1722 text6 CODE >179:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+177E text6 CODE >180:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+17FE text6 CODE >181:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1832 text6 CODE >182:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1842 text6 CODE >183:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1862 text6 CODE >184:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+188C text6 CODE >186:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+18D6 text6 CODE >187:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1938 text6 CODE >188:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+19C8 text6 CODE >189:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1AAC text6 CODE >191:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1AE0 text6 CODE >31:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1B38 text6 CODE >30:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1B90 text6 CODE >29:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1BE8 text6 CODE >28:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1C40 text6 CODE >27:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1C98 text6 CODE >192:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1D00 text6 CODE >193:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1D8C text6 CODE >194:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1DC0 text6 CODE >195:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1E28 text6 CODE >196:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1E48 text6 CODE >197:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1E72 text6 CODE >198:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1F0E text6 CODE >200:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1F42 text6 CODE >201:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1FBE text6 CODE >203:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+1FF2 text6 CODE >204:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2012 text6 CODE >205:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+203C text6 CODE >206:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+20A4 text6 CODE >43:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+20D8 text6 CODE >42:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2154 text6 CODE >208:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+21B0 text6 CODE >210:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+21D6 text6 CODE >211:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+229A text6 CODE >212:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+22BA text6 CODE >213:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+22E4 text6 CODE >214:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+23DC text6 CODE >218:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+23FC text6 CODE >219:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2426 text6 CODE >220:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+24D6 text6 CODE >221:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+250A text6 CODE >222:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+253E text6 CODE >223:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+255E text6 CODE >224:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2582 text6 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+25EE text6 CODE >226:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2606 text6 CODE >227:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2680 text6 CODE >24:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+26EC text6 CODE >229:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2726 text6 CODE >25:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2792 text6 CODE >231:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+27AE text6 CODE >232:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2804 text6 CODE >25:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2870 text6 CODE >238:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+288A text6 CODE >239:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+28D2 text6 CODE >240:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+28E2 text6 CODE >241:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2904 text6 CODE >242:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2950 text6 CODE >243:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+29A8 text6 CODE >244:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2A10 text6 CODE >245:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2A70 text6 CODE >246:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2A80 text6 CODE >247:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2A90 text6 CODE >248:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2AC4 text6 CODE >250:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2AF8 text6 CODE >251:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2B18 text6 CODE >252:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2B42 text6 CODE >39:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2B76 text6 CODE >254:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2BAA text6 CODE >38:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2C02 text6 CODE >40:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2C5A text6 CODE >255:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2C8E text6 CODE >256:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2CF6 text6 CODE >257:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2D2A text6 CODE >36:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2D82 text6 CODE >35:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2DDA text6 CODE >34:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2E32 text6 CODE >33:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2E8A text6 CODE >258:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2EE2 text6 CODE >259:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+2FEA text6 CODE >260:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+3052 text6 CODE >261:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+3072 text6 CODE >262:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+30A6 text6 CODE >263:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+30F2 text6 CODE >264:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+3122 text6 CODE >266:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+3142 text6 CODE >267:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+3176 text6 CODE >268:D:\MPLABxIDE\pic\sources\c99\common\powf.c
+49D8 text5 CODE >15:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+49D8 text5 CODE >119:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+49E8 text5 CODE >121:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+49F6 text5 CODE >122:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+4A06 text5 CODE >123:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+4A10 text5 CODE >124:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+4A1A text5 CODE >125:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+4A30 text5 CODE >128:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+4A40 text5 CODE >129:D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+496A text4 CODE >11:D:\MPLABxIDE\pic\sources\c99\common\rand.c
+496A text4 CODE >13:D:\MPLABxIDE\pic\sources\c99\common\rand.c
+49A8 text4 CODE >14:D:\MPLABxIDE\pic\sources\c99\common\rand.c
+49D6 text4 CODE >15:D:\MPLABxIDE\pic\sources\c99\common\rand.c
+4B40 text3 CODE >6:D:\MPLABxIDE\pic\sources\c99\common\rand.c
+4B40 text3 CODE >8:D:\MPLABxIDE\pic\sources\c99\common\rand.c
+4B66 text3 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\rand.c
+4A42 text2 CODE >6:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A42 text2 CODE >8:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A54 text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A5C text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A60 text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A64 text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A68 text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A6C text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A70 text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A74 text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A78 text2 CODE >9:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A7C text2 CODE >11:D:\MPLABxIDE\pic\sources\c99\common\time.c
+4A8C text2 CODE >12:D:\MPLABxIDE\pic\sources\c99\common\time.c
+48B0 text1 CODE >55:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+48B0 text1 CODE >56:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+48E8 text1 CODE >57:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+48F6 text1 CODE >58:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4960 text1 CODE >59:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4968 text1 CODE >60:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BA8 text0 CODE >31:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BA8 text0 CODE >33:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4BAC text0 CODE >35:C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P5\P5.X\mainP5.c
+4B8A cinit CODE >861:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B8A cinit CODE >863:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B8A cinit CODE >866:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B8A cinit CODE >896:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B8E cinit CODE >897:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B90 cinit CODE >898:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B90 cinit CODE >899:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B92 cinit CODE >900:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B94 cinit CODE >901:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B96 cinit CODE >904:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B98 cinit CODE >905:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B9A cinit CODE >911:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B9A cinit CODE >914:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B9C cinit CODE >915:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4B9E cinit CODE >916:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4BA0 cinit CODE >917:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4BA2 cinit CODE >918:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+4BA4 cinit CODE >919:C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\P5.X.debug.o
+__Hspace_0 4BE0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Hspace_1 1BC 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/debug\P5.X.debug.o
+_compPorts A0 0 BANK0 1 bssBANK0 dist/default/debug\P5.X.debug.o
+_powf$852 1A4 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$853 154 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$854 148 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$855 194 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$856 138 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$857 100 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$858 104 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$859 158 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$860 13C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$861 140 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$862 108 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$863 10C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$864 110 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$865 114 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+_powf$866 118 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\P5.X.debug.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\P5.X.debug.o
+_bp 869 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+_dp_h 809 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+_dp_l 801 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+_main 4BA8 0 CODE 0 text0 dist/default/debug\P5.X.debug.o
+_nanf 4B68 0 CODE 0 text8 dist/default/debug\P5.X.debug.o
+_powf 880 0 CODE 0 text6 dist/default/debug\P5.X.debug.o
+_rand 496A 0 CODE 0 text4 dist/default/debug\P5.X.debug.o
+_seed A4 0 BANK0 1 bssBANK0 dist/default/debug\P5.X.debug.o
+_time 4A42 0 CODE 0 text2 dist/default/debug\P5.X.debug.o
+nanf@s 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+nanf@u 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+start 2 0 CODE 0 init C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+___flmul@aexp 22 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flmul@bexp 23 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flmul@prod 24 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flmul@sign 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flmul@temp 28 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\P5.X.debug.o
+powf@i 12C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@j 1AC 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@k 1A0 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@n 17C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@r 14C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@s 15C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@t 1B0 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@u 174 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@v 178 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@w 144 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@x 84 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+powf@y 88 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+powf@z 1B4 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Hpowerup 2 0 CODE 0 powerup dist/default/debug\P5.X.debug.o
+time@t 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__accesstop 60 0 ABS 0 - C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+intlevel0 0 0 CODE 0 text C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+intlevel1 0 0 CODE 0 text C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+intlevel2 0 0 CODE 0 text C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+intlevel3 0 0 CODE 0 text C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\P5.X.debug.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\P5.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\P5.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\P5.X.debug.o
+_ANSELA F5B 0 ABS 0 - dist/default/debug\P5.X.debug.o
+_ANSELB F5C 0 ABS 0 - dist/default/debug\P5.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\P5.X.debug.o
+__end_of___flge 48B0 0 CODE 0 text9 dist/default/debug\P5.X.debug.o
+__end_of___lmul 4A42 0 CODE 0 text5 dist/default/debug\P5.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\P5.X.debug.o
+___fldiv@aexp 4A 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fldiv@bexp 49 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fldiv@sign 42 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\P5.X.debug.o
+__Hintcodelo 2 0 CODE 0 intcodelo dist/default/debug\P5.X.debug.o
+__end_of___fladd 3AF8 0 CODE 0 text15 dist/default/debug\P5.X.debug.o
+__end_of___fldiv 42BC 0 CODE 0 text17 dist/default/debug\P5.X.debug.o
+__end_of___flmul 3F22 0 CODE 0 text11 dist/default/debug\P5.X.debug.o
+__end_of___flneg 4B0C 0 CODE 0 text16 dist/default/debug\P5.X.debug.o
+__end_of___flsub 4AD4 0 CODE 0 text14 dist/default/debug\P5.X.debug.o
+__end_of___fltol 47AC 0 CODE 0 text18 dist/default/debug\P5.X.debug.o
+__end_of_tiny@sqrtf$F649 815 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+___fladd@a 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fladd@b 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fldiv@a 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fldiv@b 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flmul@a 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flmul@b 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flsub@a 2E 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flsub@b 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__end_of_scalbnf 44F0 0 CODE 0 text10 dist/default/debug\P5.X.debug.o
+__Lintcodelo 2 0 CODE 0 intcodelo dist/default/debug\P5.X.debug.o
+start_initialization 4B8A 0 CODE 0 cinit dist/default/debug\P5.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\P5.X.debug.o
+powf@p_h 19C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@p_l 164 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@s_h 16C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@s_l 130 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@t_h 168 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@t_l 134 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@z_h 120 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@z_l 124 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__end_of_L1 85D 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_L2 859 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_L3 855 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_L4 851 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_L5 84D 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_L6 849 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_P1 845 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_P2 841 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_P3 83D 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_P4 839 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_P5 835 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_bp 871 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_cp 821 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@__xc8_float_word 1B8 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\P5.X.debug.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\P5.X.debug.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\P5.X.debug.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\P5.X.debug.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\P5.X.debug.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\P5.X.debug.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\P5.X.debug.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\P5.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\P5.X.debug.o
+__Hconst 0 0 CONST 0 const dist/default/debug\P5.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/default/debug\P5.X.debug.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/debug\P5.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\P5.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\P5.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\P5.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/default/debug\P5.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/default/debug\P5.X.debug.o
+__Htext1 0 0 ABS 0 text1 dist/default/debug\P5.X.debug.o
+__Htext2 0 0 ABS 0 text2 dist/default/debug\P5.X.debug.o
+__Htext3 0 0 ABS 0 text3 dist/default/debug\P5.X.debug.o
+__Htext4 0 0 ABS 0 text4 dist/default/debug\P5.X.debug.o
+__Htext5 0 0 ABS 0 text5 dist/default/debug\P5.X.debug.o
+__Htext6 0 0 ABS 0 text6 dist/default/debug\P5.X.debug.o
+__Htext7 0 0 ABS 0 text7 dist/default/debug\P5.X.debug.o
+__Htext8 0 0 ABS 0 text8 dist/default/debug\P5.X.debug.o
+__Htext9 0 0 ABS 0 text9 dist/default/debug\P5.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\P5.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\P5.X.debug.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/debug\P5.X.debug.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+___xxtofl@arg B 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___xxtofl@exp A 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___xxtofl@val 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__end_of_portsInit 4BE0 0 CODE 0 text19 dist/default/debug\P5.X.debug.o
+__Hcomram 0 0 ABS 0 comram dist/default/debug\P5.X.debug.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/debug\P5.X.debug.o
+?_rndNumGen 90 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\P5.X.debug.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\P5.X.debug.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\P5.X.debug.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\P5.X.debug.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\P5.X.debug.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\P5.X.debug.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\P5.X.debug.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\P5.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\P5.X.debug.o
+__Lconst 0 0 CONST 0 const dist/default/debug\P5.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/default/debug\P5.X.debug.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/debug\P5.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\P5.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\P5.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\P5.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/default/debug\P5.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\P5.X.debug.o
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\P5.X.debug.o
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\P5.X.debug.o
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\P5.X.debug.o
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\P5.X.debug.o
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\P5.X.debug.o
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\P5.X.debug.o
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\P5.X.debug.o
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\P5.X.debug.o
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\P5.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\P5.X.debug.o
+sqrtf@__xc8_float_word 68 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+___flmul@grs 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\P5.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\P5.X.debug.o
+__Hdata 0 0 ABS 0 data dist/default/debug\P5.X.debug.o
+__Hheap 0 0 HEAP 7 heap dist/default/debug\P5.X.debug.o
+__Hinit 6 0 CODE 0 init dist/default/debug\P5.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\P5.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\P5.X.debug.o
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\P5.X.debug.o
+__Htext 0 0 ABS 0 text dist/default/debug\P5.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\P5.X.debug.o
+__Ldata 0 0 ABS 0 data dist/default/debug\P5.X.debug.o
+__Lheap 0 0 HEAP 7 heap dist/default/debug\P5.X.debug.o
+__Linit 2 0 CODE 0 init dist/default/debug\P5.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\P5.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\P5.X.debug.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\P5.X.debug.o
+__Ltext 0 0 ABS 0 text dist/default/debug\P5.X.debug.o
+__end_of_ivln2_h 875 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_ivln2_l 819 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+___flge 47AC 0 CODE 0 text9 dist/default/debug\P5.X.debug.o
+___lmul 49D8 0 CODE 0 text5 dist/default/debug\P5.X.debug.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\P5.X.debug.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug\P5.X.debug.o
+_portsInit 4BC6 0 CODE 0 text19 dist/default/debug\P5.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Hintret 0 0 ABS 0 intret dist/default/debug\P5.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\P5.X.debug.o
+__S0 4BE0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__S1 1BC 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__S4 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__S5 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\P5.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\P5.X.debug.o
+___xxtofl 44F0 0 CODE 0 text13 dist/default/debug\P5.X.debug.o
+__end_of_lg2 831 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_ovt 825 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\P5.X.debug.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/debug\P5.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\P5.X.debug.o
+__end_of___xxtofl 46A4 0 CODE 0 text13 dist/default/debug\P5.X.debug.o
+__activetblptr 1 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\P5.X.debug.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\P5.X.debug.o
+__Htext10 0 0 ABS 0 text10 dist/default/debug\P5.X.debug.o
+__Htext11 0 0 ABS 0 text11 dist/default/debug\P5.X.debug.o
+__Htext12 0 0 ABS 0 text12 dist/default/debug\P5.X.debug.o
+__Htext13 0 0 ABS 0 text13 dist/default/debug\P5.X.debug.o
+__Htext14 0 0 ABS 0 text14 dist/default/debug\P5.X.debug.o
+__Htext15 0 0 ABS 0 text15 dist/default/debug\P5.X.debug.o
+__Htext16 0 0 ABS 0 text16 dist/default/debug\P5.X.debug.o
+__Htext17 0 0 ABS 0 text17 dist/default/debug\P5.X.debug.o
+__Htext18 0 0 ABS 0 text18 dist/default/debug\P5.X.debug.o
+__Htext19 0 0 ABS 0 text19 dist/default/debug\P5.X.debug.o
+fabsf@u 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+fabsf@x 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fladd@signs D 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__ptext10 42BC 0 CODE 0 text10 dist/default/debug\P5.X.debug.o
+__ptext11 3AF8 0 CODE 0 text11 dist/default/debug\P5.X.debug.o
+__ptext12 4B0C 0 CODE 0 text12 dist/default/debug\P5.X.debug.o
+__ptext13 44F0 0 CODE 0 text13 dist/default/debug\P5.X.debug.o
+__ptext14 4A8E 0 CODE 0 text14 dist/default/debug\P5.X.debug.o
+__ptext15 3638 0 CODE 0 text15 dist/default/debug\P5.X.debug.o
+__ptext16 4AD4 0 CODE 0 text16 dist/default/debug\P5.X.debug.o
+__ptext17 3F22 0 CODE 0 text17 dist/default/debug\P5.X.debug.o
+__ptext18 46A4 0 CODE 0 text18 dist/default/debug\P5.X.debug.o
+__ptext19 4BC6 0 CODE 0 text19 dist/default/debug\P5.X.debug.o
+_numLED 5E 0 COMRAM 1 bssCOMRAM dist/default/debug\P5.X.debug.o
+___fladd 3638 0 CODE 0 text15 dist/default/debug\P5.X.debug.o
+___fldiv 3F22 0 CODE 0 text17 dist/default/debug\P5.X.debug.o
+___flmul 3AF8 0 CODE 0 text11 dist/default/debug\P5.X.debug.o
+___flneg 4AD4 0 CODE 0 text16 dist/default/debug\P5.X.debug.o
+___flsub 4A8E 0 CODE 0 text14 dist/default/debug\P5.X.debug.o
+___fltol 46A4 0 CODE 0 text18 dist/default/debug\P5.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\P5.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\P5.X.debug.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/debug\P5.X.debug.o
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+?_nanf 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+?_powf 84 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+?_rand D 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+?_time 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/default/debug\P5.X.debug.o
+__Lconfig 0 0 CONFIG 4 config dist/default/debug\P5.X.debug.o
+___fldiv@grs 45 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fldiv@rem 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+_rndNum A2 0 BANK0 1 bssBANK0 dist/default/debug\P5.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\P5.X.debug.o
+sqrtf@i 64 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+sqrtf@m 78 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+sqrtf@q 6C 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+sqrtf@r 7C 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+sqrtf@s 60 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+sqrtf@t 70 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+sqrtf@x 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+sqrtf@z 74 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+srand@s 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\P5.X.debug.o
+isa$std 1 0 ABS 0 - C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+sqrtf@ix 80 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+___fldiv@new_exp 43 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+_scalbnf 42BC 0 CODE 0 text10 dist/default/debug\P5.X.debug.o
+powf@yisint 150 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+stackhi 0 0 ABS 0 - C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+stacklo 0 0 ABS 0 - C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+__Lintcode 2 0 CODE 0 intcode dist/default/debug\P5.X.debug.o
+__Lintret 0 0 ABS 0 intret dist/default/debug\P5.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\P5.X.debug.o
+___fladd@grs 10 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Lspace_4 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__pbssCOMRAM 5E 0 COMRAM 1 bssCOMRAM dist/default/debug\P5.X.debug.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\P5.X.debug.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug\P5.X.debug.o
+___flge@ff1 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___flge@ff2 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fltol@exp1 59 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+end_of_initialization 4B9A 0 CODE 0 cinit dist/default/debug\P5.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\P5.X.debug.o
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\P5.X.debug.o
+powf@ax 170 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@hx 160 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@hy 184 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@is 190 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@ix 1A8 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@iy 198 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@s2 18C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@t1 180 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@t2 11C 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@sn 188 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+powf@y1 128 0 BANK1 1 cstackBANK1 dist/default/debug\P5.X.debug.o
+?___fladd 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+?___fldiv 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+?___flmul 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+?___flneg 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+?___flsub 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+?___fltol 8C 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+__Hreset_vec 2 0 CODE 0 reset_vec dist/default/debug\P5.X.debug.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\P5.X.debug.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/debug\P5.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\P5.X.debug.o
+__pcinit 4B8A 0 CODE 0 cinit dist/default/debug\P5.X.debug.o
+___flneg@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__ptext0 4BA8 0 CODE 0 text0 dist/default/debug\P5.X.debug.o
+__ptext1 48B0 0 CODE 0 text1 dist/default/debug\P5.X.debug.o
+__ptext2 4A42 0 CODE 0 text2 dist/default/debug\P5.X.debug.o
+__ptext3 4B40 0 CODE 0 text3 dist/default/debug\P5.X.debug.o
+__ptext4 496A 0 CODE 0 text4 dist/default/debug\P5.X.debug.o
+__ptext5 49D8 0 CODE 0 text5 dist/default/debug\P5.X.debug.o
+__ptext6 880 0 CODE 0 text6 dist/default/debug\P5.X.debug.o
+__ptext7 3178 0 CODE 0 text7 dist/default/debug\P5.X.debug.o
+__ptext8 4B68 0 CODE 0 text8 dist/default/debug\P5.X.debug.o
+__ptext9 47AC 0 CODE 0 text9 dist/default/debug\P5.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\P5.X.debug.o
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\P5.X.debug.o
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\P5.X.debug.o
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\P5.X.debug.o
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\P5.X.debug.o
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\P5.X.debug.o
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\P5.X.debug.o
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\P5.X.debug.o
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\P5.X.debug.o
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\P5.X.debug.o
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\P5.X.debug.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+?_scalbnf 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Lpowerup 2 0 CODE 0 powerup dist/default/debug\P5.X.debug.o
+?___xxtofl 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\P5.X.debug.o
+___fladd@aexp E 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fladd@bexp F 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___fltol@sign1 58 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\P5.X.debug.o
+scalbnf@n 2E 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+scalbnf@u 34 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+scalbnf@x 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+scalbnf@y 38 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___heap_hi 0 0 ABS 0 - C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+___heap_lo 0 0 ABS 0 - C:\Users\jrmoh\AppData\Local\Temp\xcAs62o.o
+___fltol@f1 8C 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+___param_bank 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\P5.X.debug.o
+__end_of__initialization 4B9A 0 CODE 0 cinit dist/default/debug\P5.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\P5.X.debug.o
+?_fabsf 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__end_of_rndNumGen 496A 0 CODE 0 text1 dist/default/debug\P5.X.debug.o
+?_sqrtf 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\P5.X.debug.o
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+_rndNumGen$851 5A 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+rndNumGen@ 90 0 BANK0 1 cstackBANK0 dist/default/debug\P5.X.debug.o
+__end_of_cp_h 87D 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_cp_l 879 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_dp_h 811 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_dp_l 809 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_huge 865 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_main 4BC6 0 CODE 0 text0 dist/default/debug\P5.X.debug.o
+__end_of_nanf 4B8A 0 CODE 0 text8 dist/default/debug\P5.X.debug.o
+__end_of_powf 3178 0 CODE 0 text6 dist/default/debug\P5.X.debug.o
+__end_of_rand 49D8 0 CODE 0 text4 dist/default/debug\P5.X.debug.o
+__end_of_time 4A8E 0 CODE 0 text2 dist/default/debug\P5.X.debug.o
+__end_of_tiny 861 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+_rndNumGen 48B0 0 CODE 0 text1 dist/default/debug\P5.X.debug.o
+__end_of_fabsf 4B40 0 CODE 0 text12 dist/default/debug\P5.X.debug.o
+__end_of_ivln2 81D 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+_PORTA F80 0 ABS 0 - dist/default/debug\P5.X.debug.o
+_PORTB F81 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__end_of_lg2_h 82D 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__end_of_lg2_l 829 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+_TRISA F92 0 ABS 0 - dist/default/debug\P5.X.debug.o
+_TRISB F93 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__end_of_sqrtf 3638 0 CODE 0 text7 dist/default/debug\P5.X.debug.o
+__end_of_srand 4B68 0 CODE 0 text3 dist/default/debug\P5.X.debug.o
+__end_of_two24 869 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__HRAM 0 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/default/debug\P5.X.debug.o
+__Hram 0 0 ABS 0 ram dist/default/debug\P5.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\P5.X.debug.o
+__LRAM 1 0 ABS 0 - dist/default/debug\P5.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/default/debug\P5.X.debug.o
+__Lram 0 0 ABS 0 ram dist/default/debug\P5.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\P5.X.debug.o
+_errno 9E 0 BANK0 1 bssBANK0 dist/default/debug\P5.X.debug.o
+_fabsf 4B0C 0 CODE 0 text12 dist/default/debug\P5.X.debug.o
+fabsf@F465 9A 0 BANK0 1 bssBANK0 dist/default/debug\P5.X.debug.o
+_sqrtf 3178 0 CODE 0 text7 dist/default/debug\P5.X.debug.o
+_srand 4B40 0 CODE 0 text3 dist/default/debug\P5.X.debug.o
+__initialization 4B8A 0 CODE 0 cinit dist/default/debug\P5.X.debug.o
+___xxtofl@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\P5.X.debug.o
+__pbssBANK0 9A 0 BANK0 1 bssBANK0 dist/default/debug\P5.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\P5.X.debug.o
+__Hsmallconst 880 0 SMALLCONST 0 smallconst dist/default/debug\P5.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\P5.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\P5.X.debug.o
+__Hintcode 2 0 CODE 0 intcode dist/default/debug\P5.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text6 0 880 880 4360 1
+cstackCOMRAM 1 1 1 5F 1
+cstackBANK0 1 60 60 48 1
+cstackBANK1 1 100 100 BC 1
+reset_vec 0 0 0 6 1
+smallconst 0 800 800 80 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
