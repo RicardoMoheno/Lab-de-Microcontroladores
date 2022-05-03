@@ -54,7 +54,7 @@ void portsInit(void){
     }
 
 //This function send a number to the display. It first brakes the 32 bit number into four 8 bit numbers and sends each
-//one to each of the 4 cathodes of the display
+//one to each of the 4 cathodes of the display.
 void send_to_disp(uint32_t disp_word){
     for (char i = 0; i < 4; i++){
         int internal_sweep = (int) pow(2, i);
