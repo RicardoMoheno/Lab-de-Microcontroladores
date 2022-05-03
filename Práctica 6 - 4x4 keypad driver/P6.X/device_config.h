@@ -1,7 +1,7 @@
 
 // PIC18F45K50 Configuration Bit Settings
 #include<xc.h>
-// 'C' source line config statements
+// 'C' source line config statements.
 
 // CONFIG1L
 #pragma config PLLSEL = PLL4X   // PLL Selection (4x clock multiplier)
