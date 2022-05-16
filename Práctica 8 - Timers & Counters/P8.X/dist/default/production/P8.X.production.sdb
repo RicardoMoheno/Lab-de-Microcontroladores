@@ -1,0 +1,290 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"7 D:\MPLABxIDE\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 D:\MPLABxIDE\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 D:\MPLABxIDE\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 D:\MPLABxIDE\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 D:\MPLABxIDE\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 D:\MPLABxIDE\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 D:\MPLABxIDE\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 D:\MPLABxIDE\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\MPLABxIDE\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"7 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P8\P8.X\LCD_disp_Driver.c
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+"24
+[v _LCD_cmd LCD_cmd `(v  1 e 1 0 ]
+"34
+[v _set_LCD_dir set_LCD_dir `(v  1 e 1 0 ]
+"44
+[v _send_to_LCD send_to_LCD `(v  1 e 1 0 ]
+"55
+[v _set_cursor_pos set_cursor_pos `(v  1 e 1 0 ]
+"82
+[v _write_string_LCD write_string_LCD `(v  1 e 1 0 ]
+"87
+[v _write_int_LCD write_int_LCD `(v  1 e 1 0 ]
+"16 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P8\P8.X\mainP8.c
+[v _main main `(v  1 e 1 0 ]
+"31
+[v _ports_init ports_init `(v  1 e 1 0 ]
+"34
+[v _measure measure `(v  1 e 1 0 ]
+"77 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P8\P8.X/LCD_disp_Driver.h
+[v _LCDdir LCDdir `uc  1 e 1 0 ]
+"4004 D:/MPLABxIDE/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+[s S25 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"4031
+[s S34 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S43 . 1 `S25 1 . 1 0 `S34 1 . 1 0 ]
+[v _LATCbits LATCbits `VES43  1 e 1 @3979 ]
+"4106
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S173 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"4659
+[s S182 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S191 . 1 `S173 1 . 1 0 `S182 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES191  1 e 1 @3986 ]
+[s S66 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"5101
+[s S75 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S82 . 1 `S66 1 . 1 0 `S75 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES82  1 e 1 @3988 ]
+"5249
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S287 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 ACTIF 1 0 :1:7 
+]
+"6319
+[s S296 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIF 1 0 :1:7 
+]
+[s S303 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S306 . 1 `S287 1 . 1 0 `S296 1 . 1 0 `S303 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES306  1 e 1 @3998 ]
+[s S215 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_T1DONE 1 0 :1:3 
+]
+"11873
+[s S218 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nT1DONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+[s S226 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[s S231 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T1DONE 1 0 :1:3 
+]
+[s S234 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 nT1DONE 1 0 :1:3 
+]
+[s S237 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1DONE 1 0 :1:3 
+]
+[s S240 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_DONE 1 0 :1:3 
+]
+[s S243 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+]
+[u S246 . 1 `S215 1 . 1 0 `S218 1 . 1 0 `S226 1 . 1 0 `S231 1 . 1 0 `S234 1 . 1 0 `S237 1 . 1 0 `S240 1 . 1 0 `S243 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES246  1 e 1 @4044 ]
+"11958
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+"12094
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"12114
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+"12357
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"12440
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"12517
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"13 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P8\P8.X\mainP8.c
+[v _count count `i  1 e 2 0 ]
+"16
+[v _main main `(v  1 e 1 0 ]
+{
+"29
+} 0
+"82 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P8\P8.X\LCD_disp_Driver.c
+[v _write_string_LCD write_string_LCD `(v  1 e 1 0 ]
+{
+[v write_string_LCD@s s `*.25Cuc  1 p 2 2 ]
+"85
+} 0
+"87
+[v _write_int_LCD write_int_LCD `(v  1 e 1 0 ]
+{
+"90
+[v write_int_LCD@HundrethDigit HundrethDigit `uc  1 a 1 19 ]
+"89
+[v write_int_LCD@TenthDigit TenthDigit `uc  1 a 1 18 ]
+"88
+[v write_int_LCD@UnitDigit UnitDigit `uc  1 a 1 17 ]
+"87
+[v write_int_LCD@x x `i  1 p 2 14 ]
+"103
+} 0
+"44
+[v _send_to_LCD send_to_LCD `(v  1 e 1 0 ]
+{
+[v send_to_LCD@xy xy `uc  1 a 1 wreg ]
+[v send_to_LCD@xy xy `uc  1 a 1 wreg ]
+[v send_to_LCD@xy xy `uc  1 a 1 1 ]
+"53
+} 0
+"15 D:\MPLABxIDE\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"7 D:\MPLABxIDE\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+"41
+} 0
+"55 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P8\P8.X\LCD_disp_Driver.c
+[v _set_cursor_pos set_cursor_pos `(v  1 e 1 0 ]
+{
+[v set_cursor_pos@row row `uc  1 a 1 wreg ]
+"56
+[v set_cursor_pos@Pos Pos `uc  1 a 1 5 ]
+"55
+[v set_cursor_pos@row row `uc  1 a 1 wreg ]
+[v set_cursor_pos@col col `uc  1 p 1 1 ]
+[v set_cursor_pos@row row `uc  1 a 1 4 ]
+"68
+} 0
+"34
+[v _set_LCD_dir set_LCD_dir `(v  1 e 1 0 ]
+{
+[v set_LCD_dir@d d `uc  1 a 1 wreg ]
+[v set_LCD_dir@d d `uc  1 a 1 wreg ]
+[v set_LCD_dir@d d `uc  1 a 1 1 ]
+"42
+} 0
+"31 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P8\P8.X\mainP8.c
+[v _ports_init ports_init `(v  1 e 1 0 ]
+{
+"33
+} 0
+"34
+[v _measure measure `(v  1 e 1 0 ]
+{
+"53
+} 0
+"7 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P8\P8.X\LCD_disp_Driver.c
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+{
+"22
+} 0
+"24
+[v _LCD_cmd LCD_cmd `(v  1 e 1 0 ]
+{
+[v LCD_cmd@cx cx `uc  1 a 1 wreg ]
+[v LCD_cmd@cx cx `uc  1 a 1 wreg ]
+[v LCD_cmd@cx cx `uc  1 a 1 0 ]
+"32
+} 0
