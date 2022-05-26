@@ -64,8 +64,6 @@ void setup(){
     TRISA = output;         // Port A set as output for count display
     PORTA = 0;
     ANSELB = digital;       // Port B set as digital for button
-    TRISBbits.TRISB2 = 1;   // Pin 2 of Port B set as input for button
-    TRISBbits.TRISB1 = 0;   // Pin 1 of Port B set as output generate interrupt signal
     TRISBbits.TRISB0 = 1;   // Pin 0 of Port B set as input for INT0 external interrupt
 }
 
