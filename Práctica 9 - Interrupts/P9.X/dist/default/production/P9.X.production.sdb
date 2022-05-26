@@ -1,0 +1,259 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"53 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P9\P9.X\mainP9.c
+[e E4857 por_ACDC `uc
+digital 0
+analog 255
+]
+"54
+[e E4854 por_dir `uc
+output 0
+input 255
+]
+"4 D:\MPLABxIDE\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 D:\MPLABxIDE\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 D:\MPLABxIDE\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 D:\MPLABxIDE\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 D:\MPLABxIDE\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 D:\MPLABxIDE\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 D:\MPLABxIDE\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 D:\MPLABxIDE\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 D:\MPLABxIDE\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 D:\MPLABxIDE\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\MPLABxIDE\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"24 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P9\P9.X\mainP9.c
+[v _main main `(v  1 e 1 0 ]
+"39
+[v _setup setup `(v  1 e 1 0 ]
+"65
+[v _state1 state1 `(v  1 e 1 0 ]
+"72
+[v _state2 state2 `(v  1 e 1 0 ]
+"77
+[v _state3 state3 `(v  1 e 1 0 ]
+"82
+[v _state4 state4 `(v  1 e 1 0 ]
+"89
+[v _state5 state5 `(v  1 e 1 0 ]
+"94
+[v _delay1S delay1S `(v  1 e 1 0 ]
+"103
+[v _high_isr high_isr `IIH(v  1 e 1 0 ]
+"115
+[v _char_to_seg char_to_seg `(v  1 e 1 0 ]
+[v i2_char_to_seg char_to_seg `(v  1 e 1 0 ]
+"233 D:/MPLABxIDE/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
+"278
+[v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
+"362
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+"2902
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+[s S231 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"3084
+[s S285 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S293 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S296 . 1 `S231 1 . 1 0 `S285 1 . 1 0 `S293 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES296  1 e 1 @3969 ]
+"3306
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"4106
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"4627
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S222 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"4881
+[u S240 . 1 `S222 1 . 1 0 `S231 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES240  1 e 1 @3987 ]
+"5249
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S54 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"12177
+[s S56 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S59 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S62 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S65 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S68 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S83 . 1 `S54 1 . 1 0 `S56 1 . 1 0 `S59 1 . 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S68 1 . 1 0 `S77 1 . 1 0 ]
+[v _RCONbits RCONbits `VES83  1 e 1 @4048 ]
+"12357
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"12440
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"12517
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"12537
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S170 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"13176
+[s S173 . 1 `uc 1 IOCIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S182 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S187 . 1 `S170 1 . 1 0 `S173 1 . 1 0 `S182 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES187  1 e 1 @4081 ]
+[s S121 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"13258
+[s S130 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S139 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S143 . 1 `S121 1 . 1 0 `S130 1 . 1 0 `S139 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES143  1 e 1 @4082 ]
+"22 C:\Users\jrmoh\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\Semestre 8\Microcontroladores\LabMicros\P9\P9.X\mainP9.c
+[v _count count `uc  1 e 1 0 ]
+"24
+[v _main main `(v  1 e 1 0 ]
+{
+"37
+} 0
+"89
+[v _state5 state5 `(v  1 e 1 0 ]
+{
+"92
+} 0
+"82
+[v _state4 state4 `(v  1 e 1 0 ]
+{
+"87
+} 0
+"77
+[v _state3 state3 `(v  1 e 1 0 ]
+{
+"80
+} 0
+"72
+[v _state2 state2 `(v  1 e 1 0 ]
+{
+"75
+} 0
+"65
+[v _state1 state1 `(v  1 e 1 0 ]
+{
+"70
+} 0
+"94
+[v _delay1S delay1S `(v  1 e 1 0 ]
+{
+"101
+} 0
+"39
+[v _setup setup `(v  1 e 1 0 ]
+{
+"63
+} 0
+"115
+[v _char_to_seg char_to_seg `(v  1 e 1 0 ]
+{
+[v char_to_seg@num num `uc  1 a 1 wreg ]
+[v char_to_seg@num num `uc  1 a 1 wreg ]
+[v char_to_seg@num num `uc  1 a 1 6 ]
+"134
+} 0
+"103
+[v _high_isr high_isr `IIH(v  1 e 1 0 ]
+{
+"113
+} 0
+"115
+[v i2_char_to_seg char_to_seg `(v  1 e 1 0 ]
+{
+[v i2char_to_seg@num num `uc  1 a 1 wreg ]
+[v i2char_to_seg@num num `uc  1 a 1 wreg ]
+[v i2char_to_seg@num num `uc  1 a 1 2 ]
+"134
+} 0
