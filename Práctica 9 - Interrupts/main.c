@@ -117,7 +117,7 @@ void __interrupt (high_priority) high_isr (void){
     INTCONbits.INT0IF = 0;
 }
 
-void char_to_seg(char num){
+void char_to_seg(char num){ 
     switch(num){
         case 0:  PORTA = ~(0b00111111); break;
         case 1:  PORTA = ~(0b00000110); break;
