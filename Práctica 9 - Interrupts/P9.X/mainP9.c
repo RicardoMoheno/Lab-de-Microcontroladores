@@ -1,14 +1,18 @@
+////++++++++++++++++++++++++| LIBRARIES / HEADERS |+++++++++++++++++++++++++++++
 #include "device_config.h"
 
+//++++++++++++++++++++++++++| DIRECTIVES |++++++++++++++++++++++++++++++++++++++
 #define _XTAL_FREQ 8000000
 #define BUTTON PORTBbits.RB0
 
+//++++++++++++++++++++++++++| DATA TYPES |++++++++++++++++++++++++++++++++++++++
 enum por_dir {output = 0x00, input = 0xFF};
 enum por_ACDC {digital = 0x00, analog = 0xFF}; 
 
+//++++++++++++++++++++++++++| ISRs |++++++++++++++++++++++++++++++++++++++++++++
 void high_isr (void);
-void low_isr (void);
 
+//++++++++++++++++++++++++++| FUNCTION DECLARATIONS |+++++++++++++++++++++++++++
 void setup(void);
 void delay1S(void);
 void char_to_seg(char);
@@ -19,8 +23,10 @@ void state3(void);
 void state4(void);
 void state5(void);
 
+//++++++++++++++++++++++++++| VARIABLE DECLARATIONS |+++++++++++++++++++++++++++
 char count = 0;
 
+//++++++++++++++++++++++++++| MAIN |++++++++++++++++++++++++++++++++++++++++++++
 void main(void){
     setup();
     while(1){
@@ -36,6 +42,7 @@ void main(void){
     }
 }
 
+//++++++++++++++++++++++++++| FUNCTIONS |+++++++++++++++++++++++++++++++++++++++
 void setup(){
     // Oscillator Init
     OSCCON = 0b01100100;    // Set internal oscillator to 8 MHz and stable
@@ -130,4 +137,3 @@ void char_to_seg(char num){
         default: PORTA = ~(0b01110001); break;
     }
 }
-
